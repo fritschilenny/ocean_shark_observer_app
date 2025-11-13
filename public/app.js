@@ -5,7 +5,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/800px-White_shark.jpg',
         lat: 28.3852, 
         lon: -81.5639, 
-        radius: 500000
+        radius: 50000
     },
     {
         name: 'Tiger Shark',
@@ -13,7 +13,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Tiger_shark.jpg/800px-Tiger_shark.jpg',
         lat: 25.7617, 
         lon: -80.1918, 
-        radius: 400000
+        radius: 40000
     },
     {
         name: 'Hammerhead Shark',
@@ -21,7 +21,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Scalloped_hammerhead_shark.jpg/800px-Scalloped_hammerhead_shark.jpg',
         lat: 34.0522, 
         lon: -118.2437, 
-        radius: 200000
+        radius: 20000
     },
     {
         name: 'Whale Shark',
@@ -29,7 +29,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Whale_shark_Georgia_aquarium.jpg/1024px-Whale_shark_Georgia_aquarium.jpg',
         lat: 12.9094, 
         lon: 123.5942,
-        radius: 1000000
+        radius: 100000
     },
     {
         name: 'Basking Shark',
@@ -37,7 +37,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cetorhinus_maximus_by_greg_skomal.JPG/1024px-Cetorhinus_maximus_by_greg_skomal.JPG',
         lat: 54.2361, 
         lon: -4.5481,
-        radius: 800000
+        radius: 80000
     },
     {
         name: 'Mako Shark',
@@ -45,7 +45,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Shortfin_mako_shark.jpg/1024px-Shortfin_mako_shark.jpg',
         lat: 35.0, 
         lon: 18.0,
-        radius: 600000
+        radius: 60000
     },
     {
         name: 'Oceanic Whitetip Shark',
@@ -53,7 +53,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Oceanic_whitetip_shark.jpg/1024px-Oceanic_whitetip_shark.jpg',
         lat: 25.0343, 
         lon: -77.3963,
-        radius: 700000
+        radius: 70000
     },
     {
         name: 'Blue Shark',
@@ -61,7 +61,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Blue_shark_from_the_side.jpg/1024px-Blue_shark_from_the_side.jpg',
         lat: 36.7783, 
         lon: -119.4179,
-        radius: 1200000
+        radius: 120000
     },
     {
         name: 'Thresher Shark',
@@ -69,7 +69,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Common_thresher_shark_in_the_Red_Sea.jpg/1024px-Common_thresher_shark_in_the_Red_Sea.jpg',
         lat: 11.3325, 
         lon: 124.1144,
-        radius: 300000
+        radius: 30000
     },
     {
         name: 'Bull Shark',
@@ -77,7 +77,7 @@ const sharks = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Bull_shark_Beqa_Lagoon_Fiji_2007.jpg/1024px-Bull_shark_Beqa_Lagoon_Fiji_2007.jpg',
         lat: 11.5167, 
         lon: -85.3500,
-        radius: 250000
+        radius: 25000
     }
 ];
 
@@ -92,7 +92,7 @@ sharks.forEach(shark => {
         radius: shark.radius,
         color: 'red',
         fillColor: '#f03',
-        fillOpacity: 0.5
+        fillOpacity: 0.3
     }).addTo(map);
     circle.bindPopup(`<b>${shark.name}</b><br>${shark.species}<br><img src="${shark.image}" alt="${shark.name}" width="100">`);
 });
